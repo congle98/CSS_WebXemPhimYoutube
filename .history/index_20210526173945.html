@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana,sans-serif;
+            font-size: 0.9em;
+            background-color: #212529;
+        }
+        .col-1 {width: 160px;}
+        .col-2 {width: 320px;}
+        .col-3 {width: 480px;}
+        .col-4 {width: 640px;}
+        .col-5 {width: 800px;}
+        .col-6 {width: 960px;}
+        .col-7 {width: 112px;}
+        .col-8 {width: 128px;}
+        .col-9 {width: 144px;}
+        .col-10 {width: 160px0;}
+        .col-11 {width: 176px0px;}
+        .col-12 {width: 192px0px}
+        .header{
+            position: relative;
+            height:75px;
+        }
+        .header-logo{
+            position: absolute;
+        }
+        .header-logo img{
+            width: 75px;
+            height: 75px;
+        }
+        .head-link{
+            position:relative;
+            top: 0px;
+            height: 55px;
+            background-color:#181818;
+        }
+        .header-link-item{
+            display: inline-block;
+            margin-top: 18px;
+            margin-right: 55px;
+        }
+        .header-link-list{
+            display: flex;
+            justify-content:center;
+        }
+        a{
+            color: pink;
+            text-decoration: none;
+        }
+        .content{
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        iframe{
+            padding: absolute;
+            width: 50%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="header col-12">
+        <div class="header-logo">
+            <img src="/img/logo.png" alt="not fount">
+        </div>
+        </div>
+        <div class="head-link col-12">
+            <ul class="header-link-list">
+                <li class="header-link-item"><a href="">Phim hoạt hình</a></li>
+                <li class="header-link-item"><a href="">Phim hoạt hình yêu thích</a></li>
+                <li class="header-link-item"><a href="">Nhân vật hoạt hình</a></li>
+                <li class="header-link-item"><a href="">Góp ý</a></li>
+            </ul>
+        </div>
+        <div class="content col-12">
+            <div class="left-content col-5">
+
+            </div>
+            <div class="right-content col-7">
+                <div class="video-1">
+                <iframe
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                </div> 
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>

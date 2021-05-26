@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana,sans-serif;
+            font-size: 0.9em;
+            background-color: #212529;
+            color: aquamarine;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+        [class*="col-"] {
+         width: 100%;
+        }
+        @media only screen and (min-width: 600px) {
+            /* For tablets: */
+            .col-m-1 {width: 8.33%;}
+            .col-m-2 {width: 16.66%;}
+            .col-m-3 {width: 25%;}
+            .col-m-4 {width: 33.33%;}
+            .col-m-5 {width: 41.66%;}
+            .col-m-6 {width: 50%;}
+            .col-m-7 {width: 58.33%;}
+            .col-m-8 {width: 66.66%;}
+            .col-m-9 {width: 75%;}
+            .col-m-10 {width: 83.33%;}
+            .col-m-11 {width: 91.66%;}
+            .col-m-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        .app{
+            max-width: 1600px;
+            margin: auto;
+        }
+        
+        .header{
+            position: relative;
+            height:75px;
+        }
+        .header-logo{
+            position: absolute;
+        }
+        .header-logo img{
+            width: 75px;
+            height: 75px;
+        }
+        .head-link{
+            position:relative;
+            top: 0px;
+            height: 55px;
+            background-color:#181818;
+        }
+        .header-link-item{
+            display: inline-block;
+            margin-top: 18px;
+            margin-right: 55px;
+        }
+        .header-link-list{
+            display: flex;
+            justify-content:center;
+        }
+        a{
+            color: pink;
+            text-decoration: none;
+        }
+        .content{
+            position: relative;
+            top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .right-content{
+            position: relative;
+            display: flex;
+            flex-direction:column;
+            font-size: 0.8em;
+        }
+
+        iframe{
+            margin-right: 200px;
+            width: 500px;
+            height: 360px;
+        }
+        .right-content__video{
+            margin: auto;
+        }
+        .left-content{
+            position: relative;
+            display: flex;
+            flex-direction:column;
+            font-size: 0.8em;
+        }
+        .left-content img{
+            width: 200px;
+            height: 200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="header col-12">
+        <div class="header-logo">
+            <img src="/img/logo.png" alt="not fount">
+        </div>
+        </div>
+        <div class="head-link col-12">
+            <ul class="header-link-list">
+                <li class="header-link-item"><a href="">Phim hoạt hình</a></li>
+                <li class="header-link-item"><a href="">Phim hoạt hình yêu thích</a></li>
+                <li class="header-link-item"><a href="">Nhân vật hoạt hình</a></li>
+                <li class="header-link-item"><a href="">Góp ý</a></li>
+            </ul>
+        </div>
+        <div class="content col-12">
+            <div class="left-content col-5">
+                <div class="left-content__img">
+                    <a href=".video-1"><img src="/img/congtyquaivat.jpg" alt=""></a></div>
+                <div class="left-content__img">
+                    <a href=".video-4"><img src="/img/doremon2.jpg" alt=""></a></div>
+                <div class="left-content__img">
+                    <a href=".video-5"><img src="/img/doremon1.jpg" alt=""></a></div>
+            </div>
+            <div class="right-content col-7">
+                <div class="right-content__video" id="video">
+                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+                </div> 
+                <p>
+                    Công ty Quái vật là một bộ phim hoạt hình hài hước Mỹ của đạo diễn Pete Docter năm 2001, với nhà sản xuất Pixar và nhà phát hành Walt Disney Pictures, ngoài ra còn có hai giám đốc sản xuất John Lasseter và Andrew Stanton. Bộ phim được thực hiện bởi đồng đạo diễn Lee Unkrich và David Silverman cùng với các dàn sao lồng tiếng John Goodman, Billy Crystal, Steve Buscemi, James Coburn và Jennifer Tilly.
+
+                    Bộ phim xoay quanh câu chuyện về hai con quái vật làm việc tại Công ty Quái vật, đó là Jame P."Sulley" Sulivan (John Goodman) và đối tác một mắt thân cận - người bạn thân thiết nhất Mike Wazowski (Bill Crystal). Nhiệm vụ của họ cũng như các quái vật khác là phải hù dọa trẻ em thật đáng sợ để có được năng lượng sử dụng trong thành phố, cả hai đều thực hiện việc đó rất xuất sắc khi lúc nào cũng trên đỉnh bảng xếp hạng. Tuy nhiên mối hiểm họa đã xuất hiện khi Mike và Sulley để xổng mất một đứa bé vào Monstropolis, gây ra hàng loạt rắc rối gián tiếp cho họ sau này.
+                    
+                    Docter đã bắt đầu phát triển bộ phim vào năm 1996 và sáng tác câu chuyện cùng with Jill Culton, Jeff Pidgeon và Ralph Eggleston. Giám đốc của Pixar đã kết hợp viết kịch bản với Daniel Gerson. Các nhân vật đã thử rất nhiều hóa thân trong quá trình sản xuất kéo dài suốt 5 năm của bộ phim. Cuối cùng đội ngũ kỹ thuật và đồ họa đã tìm ra cách thức mới để làm lông và vải trở nên chân thực hơn trong phim. Randy Newman, người đã từng soạn nhạc cho ba bộ phim trước của Pixar tiếp tục bắt tay soạn nhạc cho bộ phim thứ tư của mình.
+                    
+                    Công ty Quái vật đã nhận được nhiều lời khen ngợi từ giới phê bình và đạt được thành công lớn từ doanh thu phòng vé. Kể từ ngày công chiếu 2 tháng 11 năm 2001, bộ phim đã thu về hơn $562 triệu USD trên toàn cầu[1] và được tái công chiếu tại các rạp dưới định dạng 3D vào 19 tháng 12 năm 2012. Đại học Quái vật, phần tiếp theo của phim sẽ được công chiếu vào 21 tháng 6 năm 2013.
+                 </p>
+                <div class="right-content__video" id="video">
+                <iframe  src="https://www.youtube.com/embed/bhEYTSXunkI"></iframe>
+                </div>    
+                <p>
+                    Doraemon (ドラえもん? tên cũ tại Việt Nam là Đôrêmon) là nhân vật chính hư cấu trong loạt Manga cùng tên của họa sĩ Fujiko F. Fujio. Trong truyện lấy bối cảnh ở thế kỷ 20, Doraemon là chú mèo robot của tương lai do xưởng Matsushiba — công xưởng chuyên sản xuất robot vốn dĩ nhằm mục đích chăm sóc trẻ nhỏ. Ban đầu, chú mèo vốn dĩ thuộc sở hữu của cậu bé Sewashi, là con cháu nhiều đời sau của Nobita nhưng về sau Sewashi gửi lại cho ông Nobita của mình nhằm cải thiện cuộc sống của ông mình do Nobita là người hậu đậu, vụng về, luôn gặp trắc trở trong cuộc sống mà dẫn đến các thế hệ con cháu sau này phải sống trong cảnh nghèo khổ trong đó có Sewashi. Doraemon có một chiếc túi nhỏ trước bụng mà bên trong chứa vô vàn bảo bối tiện ích của tương lai chính vì vậy mà thường xuyên bị Nobita vòi vĩnh mượn.
+
+                    Theo như lời kể của họa sĩ Fujiko, trong một đêm ông đang tìm kiếm đề tài và nhân vật cho một bộ truyện tranh tâm đắc thì một con mèo hoang nhảy vào nhà, nó kêu vài tiếng rồi nhảy vào lòng ông mà ngủ. Do quá mệt mỏi Fujiko cũng thiếp đi lúc nào không biết. Sáng hôm sau thức dậy, ông vội vàng bước xuống cầu thang và vấp phải con lật đật của cô con gái, từ đó sinh ra sự kết hợp giữa lật đật và mèo và ra đời nhân vật Doraemon. Ngoài nước da màu xanh không có tai, bàn tay tròn vo thì Fujiko còn đính kèm một cái chuông vàng ở cổ với dãy ruy băng màu đỏ đậm. Bộ manga ba lần được chuyển thể thành anime với nhiều người đã lồng tiếng cho nhân vật. Ở phiên bản chuyển thể năm 1973 do Tomita Kōsei lồng tiếng từ tập 1 đến tập 13 còn từ tập 14 trở đi là Nozawa Masako. Ở phiên bản 1979 đến tháng 3 năm 2005 là Ōyama Nobuyo. Từ tháng 4 năm 2005 đến nay, Doraemon do Mizuta Wasabi lồng tiếng.
+
+                    Không chỉ nổi tiếng tại quê nhà Nhật Bản mà Doraemon còn được biết đến ở nhiều quốc gia khác nhau trên thế giới. Năm 2002, Doraemon được tạp chí Time Asia bình chọn là một trong hai mươi hai người hùng đáng yêu nhất của châu Á. Không những vậy, vào năm 2008, được Chính phủ Nhật Bản chọn làm đại sứ hoạt hình của Nhật Bản trong một buổi lễ do đích thân Ngoại trưởng Nhật Bản Komura Masahiko chủ trì. Trước đó vào năm 2007, Oricon xếp Doraemon vị trí thứ hai trong danh sách các nhân vật manga quyền năng nhất. Thậm chí nhân vật còn được thành phố Kawasaki cấp hộ khẩu như là một công dân chính thức năm 2012. Hàng loạt các sản phẩm thương mại ăn theo như thú nhồi bông, figure,... Bên cạnh việc xuất hiện trong Doraemon, Doraemon thỉnh thoảng còn xuất hiện trong Doraemon bóng chày và Đội quân Doraemon' — là một chuyển thể khác của Doraemon nhưng không do họa sĩ Fujiko chấp bút cũng như trong các trò chơi điện tử.
+                </p>
+                <div class="right-content__video" id="video">
+                    <iframe  src="https://www.youtube.com/embed/bhEYTSXunkI"></iframe>
+                </div>
+                <p>
+                    Doraemon (ドラえもん? tên cũ tại Việt Nam là Đôrêmon) là nhân vật chính hư cấu trong loạt Manga cùng tên của họa sĩ Fujiko F. Fujio. Trong truyện lấy bối cảnh ở thế kỷ 20, Doraemon là chú mèo robot của tương lai do xưởng Matsushiba — công xưởng chuyên sản xuất robot vốn dĩ nhằm mục đích chăm sóc trẻ nhỏ. Ban đầu, chú mèo vốn dĩ thuộc sở hữu của cậu bé Sewashi, là con cháu nhiều đời sau của Nobita nhưng về sau Sewashi gửi lại cho ông Nobita của mình nhằm cải thiện cuộc sống của ông mình do Nobita là người hậu đậu, vụng về, luôn gặp trắc trở trong cuộc sống mà dẫn đến các thế hệ con cháu sau này phải sống trong cảnh nghèo khổ trong đó có Sewashi. Doraemon có một chiếc túi nhỏ trước bụng mà bên trong chứa vô vàn bảo bối tiện ích của tương lai chính vì vậy mà thường xuyên bị Nobita vòi vĩnh mượn.
+
+                    Theo như lời kể của họa sĩ Fujiko, trong một đêm ông đang tìm kiếm đề tài và nhân vật cho một bộ truyện tranh tâm đắc thì một con mèo hoang nhảy vào nhà, nó kêu vài tiếng rồi nhảy vào lòng ông mà ngủ. Do quá mệt mỏi Fujiko cũng thiếp đi lúc nào không biết. Sáng hôm sau thức dậy, ông vội vàng bước xuống cầu thang và vấp phải con lật đật của cô con gái, từ đó sinh ra sự kết hợp giữa lật đật và mèo và ra đời nhân vật Doraemon. Ngoài nước da màu xanh không có tai, bàn tay tròn vo thì Fujiko còn đính kèm một cái chuông vàng ở cổ với dãy ruy băng màu đỏ đậm. Bộ manga ba lần được chuyển thể thành anime với nhiều người đã lồng tiếng cho nhân vật. Ở phiên bản chuyển thể năm 1973 do Tomita Kōsei lồng tiếng từ tập 1 đến tập 13 còn từ tập 14 trở đi là Nozawa Masako. Ở phiên bản 1979 đến tháng 3 năm 2005 là Ōyama Nobuyo. Từ tháng 4 năm 2005 đến nay, Doraemon do Mizuta Wasabi lồng tiếng.
+
+                    Không chỉ nổi tiếng tại quê nhà Nhật Bản mà Doraemon còn được biết đến ở nhiều quốc gia khác nhau trên thế giới. Năm 2002, Doraemon được tạp chí Time Asia bình chọn là một trong hai mươi hai người hùng đáng yêu nhất của châu Á. Không những vậy, vào năm 2008, được Chính phủ Nhật Bản chọn làm đại sứ hoạt hình của Nhật Bản trong một buổi lễ do đích thân Ngoại trưởng Nhật Bản Komura Masahiko chủ trì. Trước đó vào năm 2007, Oricon xếp Doraemon vị trí thứ hai trong danh sách các nhân vật manga quyền năng nhất. Thậm chí nhân vật còn được thành phố Kawasaki cấp hộ khẩu như là một công dân chính thức năm 2012. Hàng loạt các sản phẩm thương mại ăn theo như thú nhồi bông, figure,... Bên cạnh việc xuất hiện trong Doraemon, Doraemon thỉnh thoảng còn xuất hiện trong Doraemon bóng chày và Đội quân Doraemon' — là một chuyển thể khác của Doraemon nhưng không do họa sĩ Fujiko chấp bút cũng như trong các trò chơi điện tử.
+                </p>   
+                <div class="right-content__video" id="video">
+                    <iframe  src="https://www.youtube.com/embed/bhEYTSXunkI"></iframe>
+                </div>
+                <p>
+                    Doraemon (ドラえもん? tên cũ tại Việt Nam là Đôrêmon) là nhân vật chính hư cấu trong loạt Manga cùng tên của họa sĩ Fujiko F. Fujio. Trong truyện lấy bối cảnh ở thế kỷ 20, Doraemon là chú mèo robot của tương lai do xưởng Matsushiba — công xưởng chuyên sản xuất robot vốn dĩ nhằm mục đích chăm sóc trẻ nhỏ. Ban đầu, chú mèo vốn dĩ thuộc sở hữu của cậu bé Sewashi, là con cháu nhiều đời sau của Nobita nhưng về sau Sewashi gửi lại cho ông Nobita của mình nhằm cải thiện cuộc sống của ông mình do Nobita là người hậu đậu, vụng về, luôn gặp trắc trở trong cuộc sống mà dẫn đến các thế hệ con cháu sau này phải sống trong cảnh nghèo khổ trong đó có Sewashi. Doraemon có một chiếc túi nhỏ trước bụng mà bên trong chứa vô vàn bảo bối tiện ích của tương lai chính vì vậy mà thường xuyên bị Nobita vòi vĩnh mượn.
+
+                    Theo như lời kể của họa sĩ Fujiko, trong một đêm ông đang tìm kiếm đề tài và nhân vật cho một bộ truyện tranh tâm đắc thì một con mèo hoang nhảy vào nhà, nó kêu vài tiếng rồi nhảy vào lòng ông mà ngủ. Do quá mệt mỏi Fujiko cũng thiếp đi lúc nào không biết. Sáng hôm sau thức dậy, ông vội vàng bước xuống cầu thang và vấp phải con lật đật của cô con gái, từ đó sinh ra sự kết hợp giữa lật đật và mèo và ra đời nhân vật Doraemon. Ngoài nước da màu xanh không có tai, bàn tay tròn vo thì Fujiko còn đính kèm một cái chuông vàng ở cổ với dãy ruy băng màu đỏ đậm. Bộ manga ba lần được chuyển thể thành anime với nhiều người đã lồng tiếng cho nhân vật. Ở phiên bản chuyển thể năm 1973 do Tomita Kōsei lồng tiếng từ tập 1 đến tập 13 còn từ tập 14 trở đi là Nozawa Masako. Ở phiên bản 1979 đến tháng 3 năm 2005 là Ōyama Nobuyo. Từ tháng 4 năm 2005 đến nay, Doraemon do Mizuta Wasabi lồng tiếng.
+
+                    Không chỉ nổi tiếng tại quê nhà Nhật Bản mà Doraemon còn được biết đến ở nhiều quốc gia khác nhau trên thế giới. Năm 2002, Doraemon được tạp chí Time Asia bình chọn là một trong hai mươi hai người hùng đáng yêu nhất của châu Á. Không những vậy, vào năm 2008, được Chính phủ Nhật Bản chọn làm đại sứ hoạt hình của Nhật Bản trong một buổi lễ do đích thân Ngoại trưởng Nhật Bản Komura Masahiko chủ trì. Trước đó vào năm 2007, Oricon xếp Doraemon vị trí thứ hai trong danh sách các nhân vật manga quyền năng nhất. Thậm chí nhân vật còn được thành phố Kawasaki cấp hộ khẩu như là một công dân chính thức năm 2012. Hàng loạt các sản phẩm thương mại ăn theo như thú nhồi bông, figure,... Bên cạnh việc xuất hiện trong Doraemon, Doraemon thỉnh thoảng còn xuất hiện trong Doraemon bóng chày và Đội quân Doraemon' — là một chuyển thể khác của Doraemon nhưng không do họa sĩ Fujiko chấp bút cũng như trong các trò chơi điện tử.
+                </p>   
+                <div class="right-content__video" id="video">
+                    <iframe  src="https://www.youtube.com/embed/bhEYTSXunkI"></iframe>
+                </div>
+                <p>
+                    Doraemon (ドラえもん? tên cũ tại Việt Nam là Đôrêmon) là nhân vật chính hư cấu trong loạt Manga cùng tên của họa sĩ Fujiko F. Fujio. Trong truyện lấy bối cảnh ở thế kỷ 20, Doraemon là chú mèo robot của tương lai do xưởng Matsushiba — công xưởng chuyên sản xuất robot vốn dĩ nhằm mục đích chăm sóc trẻ nhỏ. Ban đầu, chú mèo vốn dĩ thuộc sở hữu của cậu bé Sewashi, là con cháu nhiều đời sau của Nobita nhưng về sau Sewashi gửi lại cho ông Nobita của mình nhằm cải thiện cuộc sống của ông mình do Nobita là người hậu đậu, vụng về, luôn gặp trắc trở trong cuộc sống mà dẫn đến các thế hệ con cháu sau này phải sống trong cảnh nghèo khổ trong đó có Sewashi. Doraemon có một chiếc túi nhỏ trước bụng mà bên trong chứa vô vàn bảo bối tiện ích của tương lai chính vì vậy mà thường xuyên bị Nobita vòi vĩnh mượn.
+
+                    Theo như lời kể của họa sĩ Fujiko, trong một đêm ông đang tìm kiếm đề tài và nhân vật cho một bộ truyện tranh tâm đắc thì một con mèo hoang nhảy vào nhà, nó kêu vài tiếng rồi nhảy vào lòng ông mà ngủ. Do quá mệt mỏi Fujiko cũng thiếp đi lúc nào không biết. Sáng hôm sau thức dậy, ông vội vàng bước xuống cầu thang và vấp phải con lật đật của cô con gái, từ đó sinh ra sự kết hợp giữa lật đật và mèo và ra đời nhân vật Doraemon. Ngoài nước da màu xanh không có tai, bàn tay tròn vo thì Fujiko còn đính kèm một cái chuông vàng ở cổ với dãy ruy băng màu đỏ đậm. Bộ manga ba lần được chuyển thể thành anime với nhiều người đã lồng tiếng cho nhân vật. Ở phiên bản chuyển thể năm 1973 do Tomita Kōsei lồng tiếng từ tập 1 đến tập 13 còn từ tập 14 trở đi là Nozawa Masako. Ở phiên bản 1979 đến tháng 3 năm 2005 là Ōyama Nobuyo. Từ tháng 4 năm 2005 đến nay, Doraemon do Mizuta Wasabi lồng tiếng.
+
+                    Không chỉ nổi tiếng tại quê nhà Nhật Bản mà Doraemon còn được biết đến ở nhiều quốc gia khác nhau trên thế giới. Năm 2002, Doraemon được tạp chí Time Asia bình chọn là một trong hai mươi hai người hùng đáng yêu nhất của châu Á. Không những vậy, vào năm 2008, được Chính phủ Nhật Bản chọn làm đại sứ hoạt hình của Nhật Bản trong một buổi lễ do đích thân Ngoại trưởng Nhật Bản Komura Masahiko chủ trì. Trước đó vào năm 2007, Oricon xếp Doraemon vị trí thứ hai trong danh sách các nhân vật manga quyền năng nhất. Thậm chí nhân vật còn được thành phố Kawasaki cấp hộ khẩu như là một công dân chính thức năm 2012. Hàng loạt các sản phẩm thương mại ăn theo như thú nhồi bông, figure,... Bên cạnh việc xuất hiện trong Doraemon, Doraemon thỉnh thoảng còn xuất hiện trong Doraemon bóng chày và Đội quân Doraemon' — là một chuyển thể khác của Doraemon nhưng không do họa sĩ Fujiko chấp bút cũng như trong các trò chơi điện tử.
+                </p>   
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>
